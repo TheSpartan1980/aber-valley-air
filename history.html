@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>History — Aber Valley Air</title>
+<style>
+:root { --ink:#1f2328; --muted:#5b636b; --line:#d8dee4; --bg:#f7f8fa; --card:#fff; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+header { background:var(--card); border-bottom:1px solid var(--line); }
+.wrap { width:min(980px, 92%); margin:0 auto; }
+header .wrap { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; padding:.9rem 0; flex-wrap:wrap; }
+header a { color:inherit; text-decoration:none; }
+h1 { font-size:1.4rem; margin:0; }
+nav a { margin-left:1rem; color:var(--muted); }
+nav a.active { color:var(--ink); font-weight:600; }
+main { padding:1.6rem 0 3rem; }
+h2 { font-size:1.15rem; margin:1.8rem 0 .6rem; }
+h3 { font-size:1rem; margin:1rem 0 .4rem; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:.9rem; }
+.stat .label { color:var(--muted); font-size:.85rem; }
+.stat .value { font-size:1.5rem; font-weight:650; }
+.stat .unit { color:var(--muted); font-size:.85rem; }
+.chart { width:100%; height:auto; display:block; }
+.grid line { stroke:var(--line); stroke-width:1; }
+.axis { fill:var(--muted); font-size:11px; }
+.legend { fill:var(--ink); font-size:12px; }
+table { width:100%; border-collapse:collapse; font-size:.92rem; }
+th, td { text-align:left; padding:.45rem .5rem; border-bottom:1px solid var(--line); }
+th { color:var(--muted); font-weight:600; }
+.muted { color:var(--muted); }
+.notice { background:#fff4ce; border:1px solid #f0d58c; border-radius:8px; padding:.7rem .9rem; font-size:.9rem; }
+footer { border-top:1px solid var(--line); padding:1.2rem 0; color:var(--muted); font-size:.88rem; }
+a { color:#1a5fb4; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1><a href="index.html">Aber Valley Air</a></h1>
+  <nav>
+    <a href="index.html">Now</a>
+    <a href="history.html" class="active">History</a>
+    <a href="method.html">Method</a>
+    <a href="data.html">Data</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<h2>History</h2>
+<div class="card">
+  <h3>Daily mean PM2.5, last 90 days</h3>
+  <svg viewBox="0 0 920 260" role="img" class="chart">
+<line x1="44" y1="232.0" x2="908" y2="232.0" class="grid"/>
+<text x="38" y="236.0" class="axis" text-anchor="end">0</text>
+<line x1="44" y1="122.0" x2="908" y2="122.0" class="grid"/>
+<text x="38" y="126.0" class="axis" text-anchor="end">26</text>
+<line x1="44" y1="12.0" x2="908" y2="12.0" class="grid"/>
+<text x="38" y="16.0" class="axis" text-anchor="end">53</text>
+<text x="44.0" y="252" class="axis" text-anchor="middle">00:00</text>
+<text x="260.0" y="252" class="axis" text-anchor="middle">06:00</text>
+<text x="476.0" y="252" class="axis" text-anchor="middle">12:00</text>
+<text x="692.0" y="252" class="axis" text-anchor="middle">18:00</text>
+<text x="908.0" y="252" class="axis" text-anchor="middle">24:00</text>
+<polyline points="44.0,231.8 53.7,228.7 63.4,214.2 73.1,221.7 82.8,220.3 92.5,222.0 102.2,194.2 112.0,207.7 121.7,231.2 131.4,231.4 141.1,228.5 150.8,231.2 160.5,231.5 170.2,231.9 179.9,227.3 189.6,230.5 199.3,232.0 209.0,225.2 218.7,231.2 228.4,231.9 238.2,231.7 247.9,231.7 257.6,231.3 267.3,230.4 277.0,230.0 286.7,232.0 296.4,231.5 306.1,225.1 315.8,232.0 325.5,229.9 335.2,225.2 344.9,230.0 354.7,231.4 364.4,230.5 374.1,231.2 383.8,230.7 393.5,228.4 403.2,230.2 412.9,229.7 422.6,231.0 432.3,231.7 442.0,231.0 451.7,231.9 461.4,232.0 471.1,232.0 480.9,232.0 490.6,230.7 500.3,231.6 510.0,214.5 519.7,218.8 529.4,232.0 539.1,231.9 548.8,230.7 558.5,231.8 568.2,229.5 577.9,231.7 587.6,231.4 597.3,231.5 607.1,231.9 616.8,231.9 626.5,232.0 636.2,217.1 645.9,216.5 655.6,229.7 665.3,232.0 675.0,231.0 684.7,232.0 694.4,231.9 704.1,231.7 713.8,230.2 723.6,231.1 733.3,209.2 743.0,164.6 752.7,82.4 762.4,205.7 772.1,231.6 781.8,227.0 791.5,228.9 801.2,96.6 810.9,12.0 820.6,64.5 830.3,57.6 840.0,140.1 849.8,156.5 859.5,213.7 869.2,223.9 878.9,211.7 888.6,140.9 898.3,166.7 908.0,226.0" fill="none" stroke="#b3261e" stroke-width="2"/>
+<polyline points="44.0,228.1 53.7,225.9 63.4,228.3 73.1,208.7 82.8,229.7 92.5,226.8 102.2,213.2 112.0,129.0 121.7,225.9 131.4,231.8 141.1,231.2 150.8,229.8 160.5,231.7 170.2,231.9 179.9,231.9 189.6,229.1 199.3,230.7 209.0,231.9 218.7,227.1 228.4,231.9 238.2,232.0 247.9,231.3 257.6,231.5 267.3,231.9 277.0,232.0 286.7,226.8 296.4,231.3 306.1,232.0 315.8,230.9 325.5,231.5 335.2,229.2 344.9,231.3 354.7,230.1 364.4,230.7 374.1,230.4 383.8,216.7 393.5,222.2 403.2,116.7 412.9,209.2 422.6,231.3 432.3,205.7 442.0,171.0 451.7,228.7 461.4,232.0 471.1,232.0 480.9,226.7 490.6,232.0 500.3,227.5 510.0,231.7 519.7,231.3 529.4,232.0 539.1,232.0 548.8,231.9 558.5,231.9 568.2,231.7 577.9,231.6 587.6,232.0 597.3,232.0 607.1,230.3 616.8,231.5 626.5,230.3 636.2,209.8 645.9,189.4 655.6,208.5 665.3,231.3 675.0,232.0 684.7,231.3 694.4,231.0 704.1,231.5 713.8,228.4 723.6,226.6 733.3,192.7 743.0,143.8 752.7,119.9 762.4,218.6 772.1,231.5 781.8,227.9 791.5,215.2 801.2,62.1 810.9,36.2 820.6,56.4 830.3,71.6 840.0,126.8 849.8,133.1 859.5,213.6 869.2,224.8 878.9,193.7 888.6,154.9 898.3,205.3 908.0,172.2" fill="none" stroke="#1a73e8" stroke-width="2"/>
+<rect x="44" y="12" width="12" height="12" fill="#b3261e"/>
+<text x="60" y="22" class="legend">Garden</text>
+<rect x="134" y="12" width="12" height="12" fill="#1a73e8"/>
+<text x="150" y="22" class="legend">Roof</text>
+</svg>
+</div>
+<div class="card">
+  <h3>Last 14 days</h3>
+  <table>
+    <thead><tr><th>Date</th><th>Garden mean</th><th>Roof mean</th><th>Peak</th>
+    <th>Garden evening</th><th>Roof evening</th></tr></thead>
+    <tbody><tr><td>2026-11-17</td><td>1.4</td><td>14.3</td><td>104.0</td><td>0.0</td><td>0.0</td></tr><tr><td>2026-11-16</td><td>15.7</td><td>6.4</td><td>97.0</td><td>25.3</td><td>0.2</td></tr><tr><td>2026-11-15</td><td>21.9</td><td>18.5</td><td>69.0</td><td>20.0</td><td>24.8</td></tr><tr><td>2026-11-14</td><td>4.9</td><td>9.2</td><td>48.0</td><td>13.0</td><td>10.5</td></tr><tr><td>2026-11-13</td><td>1.9</td><td>1.7</td><td>31.0</td><td>0.2</td><td>3.9</td></tr><tr><td>2026-11-12</td><td>4.4</td><td>4.4</td><td>30.0</td><td>0.7</td><td>1.2</td></tr><tr><td>2026-11-11</td><td>18.1</td><td>23.7</td><td>32.0</td><td>11.7</td><td>24.8</td></tr><tr><td>2026-11-10</td><td>22.1</td><td>25.2</td><td>47.0</td><td>16.5</td><td>26.7</td></tr><tr><td>2026-11-09</td><td>41.9</td><td>38.5</td><td>79.0</td><td>41.5</td><td>52.5</td></tr><tr><td>2026-11-08</td><td>40.2</td><td>42.1</td><td>91.0</td><td>30.6</td><td>30.0</td></tr><tr><td>2026-11-07</td><td>52.8</td><td>47.0</td><td>80.0</td><td>67.5</td><td>48.5</td></tr><tr><td>2026-11-06</td><td>32.5</td><td>40.8</td><td>50.0</td><td>44.5</td><td>45.1</td></tr><tr><td>2026-11-05</td><td>0.7</td><td>4.0</td><td>44.0</td><td>1.5</td><td>11.3</td></tr><tr><td>2026-11-04</td><td>1.2</td><td>1.0</td><td>5.0</td><td>1.1</td><td>2.0</td></tr></tbody>
+  </table>
+  <p class="muted">Evening is 17:00–23:00; daytime baseline is 03:00–06:00. All values µg/m³.</p>
+</div>
+
+</div></main>
+<footer><div class="wrap">
+Indicative monitoring from two low-cost Enviro+ sensors in Abertridwr. Not regulatory data.
+Data <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+</div></footer>
+</body>
+</html>
