@@ -25,6 +25,8 @@ h3 { font-size:1rem; margin:1rem 0 .4rem; }
 .stat .unit { color:var(--muted); font-size:.85rem; }
 .chart { width:100%; height:auto; display:block; }
 .grid line { stroke:var(--line); stroke-width:1; }
+.guide { stroke:#8a6d3b; stroke-width:1.2; stroke-dasharray:4 3; }
+.guide-label { fill:#8a6d3b; font-size:10px; }
 .axis { fill:var(--muted); font-size:11px; }
 .legend { fill:var(--ink); font-size:12px; }
 table { width:100%; border-collapse:collapse; font-size:.92rem; }
@@ -60,6 +62,17 @@ the nearest OpenWeather station and is indicative — the valley has its own loc
 <p>These are low-cost optical sensors, not reference monitors. They cannot identify a source, cannot
 distinguish wood smoke from other combustion, and are affected by humidity. An episode is only
 counted when <strong>both</strong> units rise together; a single-sensor spike is a local artefact.</p>
+
+<h3>Against the WHO guidelines</h3>
+<p>The History page sets daily means against the WHO global air quality guidelines for PM2.5
+(2021): <strong>15 µg/m³ as a 24-hour mean</strong> and <strong>5 µg/m³ as an annual mean</strong>.
+Two cautions apply. WHO describes these as reference values rather than safe limits — the
+evidence shows health effects continuing below them, and the guidelines were set at the lowest
+levels at which harm is demonstrable, not at a threshold. And the sensors' own accuracy, roughly
+±10 µg/m³, is as wide as the entire gap between the two lines, so a reading near either value
+cannot on its own prove which side of it the true concentration fell. The comparison is published
+because it is the standard everyone else measures against, not because this equipment can resolve
+it finely.</p>
 
 <h3>Known limitations</h3>
 <ul>
